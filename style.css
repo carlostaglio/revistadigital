@@ -1,0 +1,155 @@
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+    background-color: #000000;
+}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.img-portada {
+    width: 50%;
+}
+
+.panel {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: black;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 16px;
+	overflow: visible;
+}
+
+.scroll-down .arrow {
+	position: relative;
+	top: -4px;
+	margin: 0 auto;
+	width: 20px;
+	height: 20px;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+	background-size: contain;
+}
+
+/*.banner {
+    background-image: url("assets\\calligraphy-ruling-pen-2-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}*/
+.banner1 {
+	background-image: url("assets\\calligraphy-ruling-pen-2-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.banner2 {
+	background-image: url("assets\\calligraphy-ruling-pen-2-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} 
+
+.gallery {
+	background-color: #ffffff;
+}
+
+.gallery-imgs {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img1 {
+    background-image: url("assets\\calligraphy-copperplate-7.jpg");
+}
+
+.img2 {
+    background-image: url("assets\\calligraphy-brush-work-3.jpg");
+}
+
+.img3 {
+    background-image: url("assets\\calligraphy-copperplate-variations-3.jpg");
+}
+
+.item {
+    width: 30%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item:hover {
+    width: 80%;
+}
+
+.biography {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foto {
+    width: 30%;
+    height: 60%;
+}
+
+.bio {
+    font: 16px sans-serif;
+    width: 40%;
+}
+
+.lastContainer {
+    display: flex;
+    height: 100vh;
+    background: lightblue;
+}
